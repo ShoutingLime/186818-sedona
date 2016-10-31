@@ -1,0 +1,28 @@
+body {
+    font-family: PTSans;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: 100px;
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: black;
+}
+
+.search-hotels h2 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    color: black;
+}
