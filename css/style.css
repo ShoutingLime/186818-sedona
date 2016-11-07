@@ -192,7 +192,15 @@ h3 {
     width: 200px;
 }
 
+.sorting {
+    display: inline-block;
+}
+
 .sorting-header {
+    display: inline-block;
+}
+
+.sorting ul {
     display: inline-block;
 }
 
@@ -224,11 +232,6 @@ h3 {
 .rating-value {
     display: inline-block;
 }
-
-
-
-
-
 
 
 
