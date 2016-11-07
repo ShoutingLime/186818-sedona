@@ -1,23 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
     font-weight: 100px;
+    width: 1280px;
+    margin: 0 auto;
 }
 
-h2 {
+.container {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    min-height: 56px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -69px;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation ul li {
+    padding: 16px 60px;
+}
+
+.navigation li:nth-child(1) {
+    float: left;
+}
+
+.navigation li:nth-child(2) {
+    float: left;
+}
+
+.navigation li:nth-child(3) {
+    float: right;
+}
+
+.navigation li:nth-child(4) {
+    float: right;
+    
+}
+
+.greeting {
+    min-height: 508px;
+}
+
+.greeting img {
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    margin-left: -229px;
+}
+
+.advantages {
+    min-height: 1312px;
+}
+
+.advantages h2 {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: black;
+    text-align: center;
+    padding: 0 300px;
+    padding-top: 64px;
 }
 
-.search-hotels h2 {
-    font-size: 30px;
-    line-height: 24px;
-    font-weight: bold;
-    color: black;
+.advantages h2 + p {
+    text-align: center;
+    margin-top: 39px;
+    margin-bottom: 55px;
+}
+
+.advantage-text-left {
+    width: 400px;
+    float: left;
+}
+
+.features {
+    clear: both;
+    text-align: center;
+}
+
+.feature {
+    float: left;
+    width: 400px;
+    min-height: 290px
+}
+
+.advantage {
+    clear: both;
+    text-align: center;
+}
+
+.advantage-img-right {
+    float: left;
 }
 
 h3 {
@@ -25,4 +117,201 @@ h3 {
     line-height: 21px;
     font-weight: bold;
     color: black;
+}
+
+.search-hotels {
+    min-height: 292px;
+    position: relative;
+}
+
+.search-hotels h2 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 59px;
+}
+
+.search-hotels h2 + p {
+    text-align: center;
+}
+
+.search-form-button {
+    width: 586px;
+    position: absolute;
+    top: 272px;
+    left: 50%;
+    margin-left: -286px;
+    z-index: 2;
+}
+
+.footer {
+    min-height: 120px;
+}
+
+.footer-hashtag {
+    float: left;
+    width: 400px;
+}
+
+.footer-social-networks {
+    float: left;
+    width: 400px;
+}
+
+.footer-social-networks ul {
+    list-style-type: none;
+}
+
+.footer-copyright {
+    float: left;
+    width: 400px;
+}
+
+/* Стили страницы hotels */
+
+.options {
+    float: left;
+    width: 312px;
+    
+    /* Временно */
+    min-height: 216px;
+}
+
+.selected {
+    clear: both;
+}
+
+.selected-summary {
+    display: inline-block;
+}
+
+.selected-hotels {
+    display: inline-block;
+    width: 200px;
+}
+
+.sorting-header {
+    display: inline-block;
+}
+
+.sorting ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.list-item {
+    /* Временно */
+    min-height: 153px;
+}
+
+.hotel-image-small {
+    float: left;
+    padding-top: 31px;
+    padding-left: 72px;
+    padding-right: 30px;
+}
+
+.hotel-info .accommodation-type {
+    display: inline-block;
+}
+
+.hotel-info .hotel-cost-min {
+    display: inline-block;
+}
+
+.rating-value {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+    position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+    content: "";
+    position: absolute;
+
+    height: 24px;
+    padding: 2px 5px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Courier New", monotype;
+    white-space: nowrap;
+}
+
+body > *::before {
+    top: -3px;
+    left: -3px;
+}
+
+body > * > *::before {
+    top: -3px;
+    left: -3px;
+}
+
+body > * > * > *::before {
+    top: 0;
+    left: 0;
+}
+
+body > * {
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+    color: white;
+    background: green;
+}
+
+body > * > * {
+    background: rgba(255, 45, 82, 0.2);
+    box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+    color: white;
+    background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+    background: rgba(234, 255, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+    color: black;
+    background: rgb(234, 255, 45);
+}
+
+.header::before {
+    content: ".header";
+}
+
+.container::before {
+    content: ".container";
 }
