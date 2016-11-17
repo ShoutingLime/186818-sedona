@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +35,7 @@
         </header>
         <main>
             <div class="greeting">
-                <img src="./img/welcome_to_Sedona.png" alt="Welcome to the gorgeous Sedona" width="458" height="350">
+                <img src="./img/welcome_to_Sedona.png" alt="Welcome to the gorgeous Sedona" width="458" height="352">
             </div>
             <section class="advantages">
                 <h2>Седона&nbsp;— небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h2>
@@ -77,7 +79,7 @@
                     </div>
                 </article>
 
-                <section class="features">
+                <section class="features features3-5">
                     <article class="feature">
                         <h3 class="feature-header">Небольшая<br>площадь</h3>
                         <span class="feature-number">—&nbsp;№3&nbsp;—</span>
@@ -91,7 +93,7 @@
                     <article class="feature">
                         <h3 class="feature-header">Мало<br>туристов</h3>
                         <span class="feature-number">—&nbsp;№5&nbsp;—</span>
-                        <p>Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+                        <p>Большинство едет в&nbsp;Гранд Каньон и толпится там</p>
                     </article>
                 </section>
             </section>
@@ -100,10 +102,30 @@
                 <p>Укажите предполагаемые даты поездки,
                     <br> и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
                 <button class="search-form-button">Поиск гостиницы в Седоне</button>
-                <!-- Форма поиска будет сверстана позже -->
+                <div class="search-popup">
+                    <form action="handler.php" method="get" name="search-hotels-form">
+                        <p class="check-in-date">Дата заезда:
+                            <input type="text" size="40" placeholder="24 апреля 2016">
+                            <img src="img/icon-calendar.png" alt="calendar">
+                        </p>
+                        <p class="check-out-date">Дата выезда:
+                            <input type="text" size="40" placeholder="4 июля 2016">
+                            <img src="img/icon-calendar.png" alt="calendar">
+                        </p>
+                        <p class="counter-adults">Взрослые:
+                            <input type="text" size="2" value="2"><img class="minus" src="img/icon-minus.png">
+                            <img class="plus" src="img/icon-plus.png">
+                        </p>
+                        <p class="counter-children">Дети:
+                            <input type="text" size="2" value="0"><img class="minus" src="img/icon-minus.png">
+                            <img class="plus" src="img/icon-plus.png">
+                        </p>
+                        <input class="find-button" type="submit" value="Найти">
+                    </form>
+                </div>
             </section>
             <div class="map">
-                <img src="./img/map.png" alt="map" width="1200" height="473">
+                <img src="./img/map.png" alt="map" width="1200">
             </div>
         </main>
         <footer class="footer">
@@ -112,19 +134,20 @@
             </div>
             <div class="footer-social-networks">
                 <ul>
-                    <li><a class="socnet-link icon-twitter" href="#">Twitter</a></li>
-                    <li><a class="socnet-link icon-facebook" href="#">Facebook</a></li>
-                    <li><a class="socnet-link icon-youtube" href="#">YouTube</a></li>
+                    <li><a class="socnet-link icon-twitter" href="#"><img src="./img/icon-twitter.png" width="46" height="48" alt="Twitter"></a></li>
+                    <li><a class="socnet-link icon-facebook" href="#"><img src="./img/icon-facebook.png" width="46" height="48" alt="Facebook"></a></li>
+                    <li><a class="socnet-link icon-youtube" href="#"><img src="./img/icon-youtube.png" width="46" height="48" alt="Youtube"></a></li>
                 </ul>
             </div>
             <div class="footer-copyright">
-                <span>Website by</span>
+                <p>Website by</p>
                 <a class="logo-htmlacademy" href="https://htmlacademy.ru/">
                     <img src="./img/logo-htmlacademy.png" width="113" height="39" alt="html academy">
                 </a>
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
