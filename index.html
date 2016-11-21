@@ -15,7 +15,7 @@
             <a class="logo" href="index.html">
                 <img src="./img/logo.png" width="138" height="70" alt="Sedona">
             </a>
-            <nav class="navigation">
+            <nav class="navigation clearfix">
                 <ul>
                     <li>
                         <a href="#">Информация</a>
@@ -27,8 +27,7 @@
                         <a href="hotels.html">Гостиницы</a>
                     </li>
                     <li>
-                        <a href="#map">Карта штата
-                        </a>
+                        <a href="#map">Карта штата</a>
                     </li>
                 </ul>
             </nav>
@@ -46,7 +45,7 @@
                         <span class="advantage-number">—&nbsp;№1&nbsp;—</span>
                         <p>Седона&nbsp;— не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
                     </div>
-                    <div class="advantage-img advantage-img-left">
+                    <div class="advantage-img advantage-img-right">
                         <img src="./img/photo-1.jpg" width="800" height="256" alt="Sedona photo 1">
                     </div>
                 </article>
@@ -104,22 +103,25 @@
                 <button class="search-form-button">Поиск гостиницы в Седоне</button>
                 <div class="search-popup">
                     <form action="handler.php" method="get" name="search-hotels-form">
-                        <p class="check-in-date">Дата заезда:
-                            <input type="text" size="40" placeholder="24 апреля 2016">
-                            <img src="img/icon-calendar.png" alt="calendar">
-                        </p>
-                        <p class="check-out-date">Дата выезда:
-                            <input type="text" size="40" placeholder="4 июля 2016">
-                            <img src="img/icon-calendar.png" alt="calendar">
-                        </p>
-                        <p class="counter-adults">Взрослые:
-                            <input type="text" size="2" value="2"><img class="minus" src="img/icon-minus.png">
-                            <img class="plus" src="img/icon-plus.png">
-                        </p>
-                        <p class="counter-children">Дети:
-                            <input type="text" size="2" value="0"><img class="minus" src="img/icon-minus.png">
-                            <img class="plus" src="img/icon-plus.png">
-                        </p>
+                       
+                       
+                        <div class="check-in-date clearfix">
+                            <label for="cal_1">Дата заезда:</label>
+                            <input id="cal_1" type="text" size="40" placeholder="24 апреля 2016">
+                        </div>
+                        
+                        
+                        <div class="check-out-date clearfix">
+                            <label for="cal_2">Дата выезда:</label>
+                            <input id="cal_2" type="text" size="40" placeholder="4 июля 2016">
+                        </div>
+                        <div class="counters clearfix">
+                            <label class="counter-adults">Взрослые:</label>
+                            <input type="text" size="2" value="2">
+
+                            <label class="counter-children">Дети:</label>
+                            <input type="text" size="2" value="0">
+                        </div>
                         <input class="find-button" type="submit" value="Найти">
                     </form>
                 </div>
@@ -133,17 +135,15 @@
                 <a href="#">#visitsedona</a>
             </div>
             <div class="footer-social-networks">
-                <ul>
-                    <li><a class="socnet-link icon-twitter" href="#"><img src="./img/icon-twitter.png" width="46" height="48" alt="Twitter"></a></li>
-                    <li><a class="socnet-link icon-facebook" href="#"><img src="./img/icon-facebook.png" width="46" height="48" alt="Facebook"></a></li>
-                    <li><a class="socnet-link icon-youtube" href="#"><img src="./img/icon-youtube.png" width="46" height="48" alt="Youtube"></a></li>
+                <ul class="clearfix">
+                    <li><a class="socnet-link icon-twitter" href="#"></a></li>
+                    <li><a class="socnet-link icon-facebook" href="#"></a></li>
+                    <li><a class="socnet-link icon-youtube" href="#"></a></li>
                 </ul>
             </div>
             <div class="footer-copyright">
                 <p>Website by</p>
-                <a class="logo-htmlacademy" href="https://htmlacademy.ru/">
-                    <img src="./img/logo-htmlacademy.png" width="113" height="39" alt="html academy">
-                </a>
+                <a class="logo-htmlacademy" href="https://htmlacademy.ru/"></a>
             </div>
         </footer>
     </div>
