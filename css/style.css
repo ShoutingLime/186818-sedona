@@ -13,7 +13,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: #333333;
-    font-weight: 100px;
+    font-weight: 100;
     width: 1280px;
     margin: 0 auto;
     background-color: #f2f2f2;
@@ -27,6 +27,10 @@ body {
     background-color: #ffffff;
     box-shadow: 5px 0 10px #dbdbdb, -5px 0 10px #dbdbdb;
 }
+
+/*    -----    Стили страницы index    -----    */
+
+/* Блок верхнего меню */
 
 .header {
     min-height: 56px;
@@ -81,20 +85,17 @@ body {
 
 .navigation ul li:nth-child(2) {
     float: left;
-    padding: 17px 76px;
-    transform: scaleX(1.01);
+    padding: 17px 75px;
 }
 
 .navigation ul li:nth-child(3) {
     float: right;
     padding: 17px 72px;
-    transform: scaleX(1.01);
 }
 
 .navigation ul li:nth-child(4) {
     float: right;
-    padding: 17px 92px;
-    transform: scaleX(1.06);
+    padding: 17px 91px;
 }
 
 .navigation a {
@@ -118,6 +119,11 @@ body {
     opacity: 0.3;
     color: black;
 }
+
+/* Конец блока верхнего меню */
+
+
+/* Блок Welcome to Sedona */
 
 .greeting {
     min-height: 508px;
@@ -143,6 +149,11 @@ body {
     margin-left: -229px;
 }
 
+/* Конец блока Welcome to Sedona */
+
+
+/* Блок преимуществ и фич*/
+
 .advantages {
     min-height: 1313px;
 }
@@ -161,7 +172,6 @@ body {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 53px;
-    transform: scaleX(1.01);
 }
 
 .advantage-text-left {
@@ -208,6 +218,10 @@ body {
     margin-bottom: 82px;
 }
 
+.features3-5 .feature p {
+    margin-bottom: 57px;
+}
+
 .advantage {
     clear: both;
     text-align: center;
@@ -233,7 +247,6 @@ body {
 
 .advantage p {
     padding: 21px 50px;
-    transform: scaleX(1.01);
     color: white;
 }
 
@@ -244,7 +257,6 @@ body {
 .advantage-text-right p {
     padding-left: 836px;
     padding-right: 20px;
-    transform: scaleX(0.985);
 }
 
 h3 {
@@ -261,7 +273,7 @@ h3 {
     padding-top: 48px;
 }
 
-.features3-5 .feature {
+.features3-5 {
     background-color: #eeeeee;
 }
 
@@ -274,22 +286,24 @@ h3 {
     padding-top: 21px;
     padding-left: 68px;
     padding-right: 70px;
-    transform: scaleX(1.01);
 }
 
 .features3-5 .feature:nth-child(2) p {
     padding-top: 21px;
     padding-left: 69px;
     padding-right: 70px;
-    transform: scaleX(1.015);
 }
 
 .features3-5 .feature:nth-child(3) p {
     padding-top: 21px;
     padding-left: 59px;
     padding-right: 60px;
-    transform: scaleX(1.006);
 }
+
+/* Конец блока преимуществ и фич*/
+
+
+/* Блок поиска отелей*/
 
 .search-hotels {
     min-height: 292px;
@@ -309,9 +323,9 @@ h3 {
 .search-hotels h2 + p {
     text-align: center;
     padding-top: 30px;
-    transform: scaleX(1.007);
     line-height: 24px;
     text-indent: 2px;
+    padding-bottom: 60px;
 }
 
 .search-form-button {
@@ -334,6 +348,8 @@ h3 {
     cursor: pointer;
 }
 
+/* Форма поиска отелей */
+
 .search-popup {
     position: absolute;
     top: 291px;
@@ -349,7 +365,6 @@ h3 {
 
 .check-in-date label {
     padding-left: 57px;
-    transform: scaleX(1.022);
     float: left;
     margin-top: 62px;
 }
@@ -378,8 +393,8 @@ h3 {
     background-position: -62px -20px;
     height: 22px;
     width: 21px;
-    top: 2px;
-    left: 474px;
+    top: 64px;
+    left: 484px;
 }
 
 .check-in-date label:hover::after {
@@ -404,7 +419,6 @@ h3 {
 
 .check-out-date label {
     padding-left: 56px;
-    transform: scaleX(1.025);
     float: left;
     margin-top: 36px;
 }
@@ -433,8 +447,8 @@ h3 {
     background-position: -62px -20px;
     height: 22px;
     width: 21px;
-    top: 2px;
-    left: 473px;
+    top: 131px;
+    left: 484px;
 }
 
 .check-out-date label:hover::after {
@@ -459,7 +473,6 @@ h3 {
 
 .counters label {
     padding-left: 0px;
-    transform: scaleX(1.022);
     float: left;
     margin-top: 5px;
 }
@@ -499,12 +512,12 @@ label.counter-children + input {
     background-position: -128px -52px;
     height: 11px;
     width: 11px;
-    top: 39px;
-    left: 197px;
+    top: 205px;
+    left: 257px;
 }
 
 .counters label.counter-children::after {
-    left: 152px;
+    left: 488px;
 }
 
 .counters label:hover::after {
@@ -527,12 +540,12 @@ label.counter-children + input {
     background-position: -64px -65px;
     height: 3px;
     width: 12px;
-    top: 43px;
-    left: 123px;
+    top: 209px;
+    left: 180px;
 }
 
 .counters label.counter-children::before {
-    left: 78px;
+    left: 413px;
 }
 
 .counters label:hover::before {
@@ -637,13 +650,19 @@ img.plus {
 
 .find-button:hover {
     background-color: #669ec0;
-    
+
 }
 
 .find-button:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.5);
 }
+
+/* Конец формы поиска отелей */
+/* Конец блока поиска отелей */
+
+
+/* Блок карты */
 
 .map {
     max-width: 1200px;
@@ -655,6 +674,11 @@ img.plus {
     width: 100%;
     height: 100%;
 }
+
+/* Конец блока карты */
+
+
+/* Футер */
 
 .footer {
     position: relative;
@@ -760,6 +784,7 @@ img.plus {
 .footer-copyright {
     float: left;
     width: 400px;
+    text-align: center;
 }
 
 .footer-copyright p {
@@ -789,69 +814,44 @@ img.plus {
     background-position: 0 -258px;
 }
 
-/* Стили страницы hotels */
+/* Конец футера */
+/* Конец страницы index */
 
-.hotels-header {
-    min-height: 56px;
-}
+/*    -----    Стили страницы hotels    -----    */
 
-.navigation li:nth-child(1) {
-    float: left;
-    padding: 17px 71px;
-    font-weight: 700;
-}
-
-.navigation li:nth-child(2) {
-    float: left;
-    padding: 17px 64px;
-    font-weight: 700;
-}
-
-.navigation li:nth-child(3) {
-    float: right;
-    padding: 17px 65px;
-    font-weight: 700;
-    transform: scaleX(0.89);
-}
-
-.navigation li:nth-child(4) {
-    float: right;
-    padding: 17px 86px;
-    font-weight: 700;
-    transform: scaleX(0.89);
-}
+/* Блок с чекбоксами */
 
 .hotels-filters {
     background-image: url(../img/background-photo-hotels.jpg);
     min-height: 217px;
     background-position-y: -56px;
-    z-index: -10;
+    padding-left: 70px;
 }
 
 .options {
     float: left;
-    width: 230px;
-    font-size: 15px;
+    width: 220px;
+    font-size: 16px;
     line-height: 21px;
     color: white;
-    margin-top: 10px;
     border: none;
     font-weight: 600;
 }
 
 .options legend {
-    padding-top: 20px;
-    margin-bottom: -15px;
-    margin-left: -3px;
+    padding-top: 22px;
+    margin-bottom: -5px;
+    -webkit-font-kerning: none;
+    font-kerning: none;
 }
 
 .option-item label {
     display: block;
-    font-size: 13px;
-    line-height: 1px;
+    font-size: 14px;
+    line-height: 21px;
     font-weight: 200;
-    margin-left: 36px;
-    margin-top: 45px;
+    margin-left: 15px;
+    margin-top: 25px;
 }
 
 .option-item input + label::before {
@@ -861,29 +861,31 @@ img.plus {
     background-repeat: no-repeat;
     background-position: -32px -52px;
     height: 22px;
-    width: 22px;
+    width: 26px;
     position: relative;
     top: 15px;
-    left: -39px;
+    left: -15px;
     float: left;
-    margin-top: -25px;
+    margin-top: -17px;
 }
 
 .options:nth-child(1) {
-    margin-left: 75px;
     margin-top: 6px;
-    transform: scaleX(1.1);
+    margin-left: -9px;
 }
 
 .options:nth-child(2) {
     margin-top: 6px;
-    transform: scaleX(1.07);
+    margin-left: 4px;
 }
 
 .options:nth-child(2) label {
-    margin-left: 35px;
+    margin-left: 25px;
 }
 
+.options:nth-child(2) legend {
+    margin-left: 8px;
+}
 
 .option-checkbox {
     display: none;
@@ -904,28 +906,29 @@ img.plus {
 .option-item input:disabled + label::before {
     background-position: 0 -52px;
     height: 22px;
-    width: 22px;
+    width: 26px;
 }
 
+/* Конец блока с чекбоксами */
 
-/* начало блока с ползунками */
+
+/* Блок с ползунками */
 
 .filter-range {
     float: left;
     width: 330px;
     color: #ffffff;
     text-transform: uppercase;
-    margin-left: 213px;
+    margin-left: 243px;
     margin-top: 28px;
 }
 
 .filter-range-title {
     margin-bottom: 9px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 21px;
-    transform: scaleX(1.07);
-    margin-left: 20px;
+    margin-left: 9px;
 }
 
 .price-controls {
@@ -947,6 +950,7 @@ img.plus {
     width: 2px;
     height: 22px;
     background: #ffffff;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -954,9 +958,10 @@ img.plus {
     font-family: 'PT Sans', Arial, sans-serif;
     display: inline-block;
     font-size: 14px;
-    line-height: 34px;
-    vertical-align: top;
+    line-height: 21px;
+    vertical-align: baseline;
     cursor: pointer;
+    margin-top: 6px;
 }
 
 .price-controls .min-price,
@@ -973,6 +978,7 @@ img.plus {
     background: none;
     border: none;
     outline: none;
+    vertical-align: top;
 }
 
 .range-controls {
@@ -1019,10 +1025,10 @@ img.plus {
 
 .btn-transparent {
     display: block;
-    margin: 0 100px;
-    padding: 6px 34px;
+    margin: 0 102px;
+    padding: 6px 31px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 21px;
     color: #ffffff;
     text-transform: uppercase;
     background: transparent;
@@ -1030,7 +1036,6 @@ img.plus {
     border-radius: 2px;
     outline: none;
     cursor: pointer;
-    transform: scaleX(0.94);
 }
 
 .btn-transparent:hover {
@@ -1038,8 +1043,10 @@ img.plus {
     background: #ffffff;
 }
 
+/* Конец блока с ползунками */
 
-/* конец блока с ползунками */
+
+/* Блок "Найдено" */
 
 .selected {
     clear: both;
@@ -1070,7 +1077,7 @@ img.plus {
 
 .sorting-header {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
     font-size: 12px;
     margin-left: 45px;
     margin-right: 30px;
@@ -1079,7 +1086,7 @@ img.plus {
 
 .sorting ul {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .sorting ul li {
@@ -1122,7 +1129,7 @@ img.plus {
     width: 11px;
     float: right;
     position: relative;
-    top: -18px;
+    top: -16px;
     left: -96px;
 }
 
@@ -1136,7 +1143,7 @@ img.plus {
     width: 11px;
     float: right;
     position: relative;
-    top: -18px;
+    top: -17px;
     left: -62px;
 }
 
@@ -1159,6 +1166,8 @@ img.plus {
 .ranking a.active::after {
     background-position: -21px 0;
 }
+
+/* Конец блока "Найдено" */
 
 
 /* Спрайт */
@@ -1367,56 +1376,93 @@ img.plus {
     width: 113px;
 }
 
-
 /* Конец спрайта*/
 
-.list-item {
-    min-height: 150px;
+
+/* Блок выбранных отелей*/
+
+.hotel {
+    min-height: 125px;
     border-bottom: 1px solid #e5e5e5;
+    margin-top: 25px;
 }
 
-.hotel-title a {
+.hotel-col-photo {
+    margin-left: 72px;
+    float: left;
+    margin-top: 6px;
+    margin-right: 30px;
+    width: 135px;
+    margin-bottom: 25px;
+}
+
+.hotel-img a {
+    display: block;
+}
+
+.hotel-col-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.hotel-name {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 7px;
+}
+
+.hotel-col-photo {
+    width: 135px;
+    float: left;
+}
+
+.hotel-col-info {
+    width: 750px;
+    float: left;
+}
+
+.hotel-col-rating {
+    width: 185px;
+    float: right;
+}
+
+.hotel-name a {
     text-decoration: none;
     color: black;
     font-size: 21px;
     line-height: 26px;
 }
 
-.hotel-title a:hover {
+.hotel-name a:hover {
     color: #81b3d2;
 }
 
-.hotel-title a:active {
+.hotel-name a:active {
     color: silver;
 }
 
-.hotel-image-small img {
-    margin-left: 72px;
-    float: left;
-    margin-top: 29px;
-    margin-right: 30px;
-}
-
-.hotel-title {
-    position: relative;
-    left: 5px;
-    padding-top: 25px;
-    margin-bottom: 7px;
-    transform: scaleX(1.01);
-}
-
-.hotel-info .accommodation-type {
+.hotel-type {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 55px;
+    margin-right: 35px;
 }
 
-.hotel-info .hotel-cost-min {
+.hotel:nth-child(2) .hotel-type {
     display: inline-block;
     vertical-align: middle;
+    margin-right: 60px;
 }
 
-.rating-value {
+.hotel:nth-child(3) .hotel-type {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 17px;
+}
+
+.hotel-price {
     display: inline-block;
     vertical-align: middle;
 }
@@ -1425,6 +1471,7 @@ img.plus {
     display: inline-block;
     vertical-align: middle;
     padding: 0 17px;
+    margin-bottom: 28px;
     border: none;
     margin-top: 14px;
     text-decoration: none;
@@ -1448,6 +1495,7 @@ img.plus {
     display: inline-block;
     vertical-align: middle;
     padding: 0 17px;
+    margin-bottom: 28px;
     border: none;
     margin-top: 14px;
     text-decoration: none;
@@ -1466,33 +1514,34 @@ img.plus {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.rating-value {
+.hotel-rating {
     float: right;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
     background-color: #f2f2f2;
     margin-right: -20px;
-    margin-top: -27px;
+    margin-top: 69px;
     padding-left: 14px;
     padding-right: 12px;
+
     color: #666666;
 }
 
-.list-item:nth-child(2) .rating-value:nth-child(2) {
+.hotel:nth-child(2) .hotel-rating {
     margin-right: 27px;
 }
 
-.list-item:nth-child(3) .rating-value:nth-child(2) {
+.hotel:nth-child(3) .hotel-rating {
     margin-right: 4px;
 }
 
-.rating-stars li {
+.hotel-stars li {
     list-style-type: none;
     float: right;
 }
 
-.rating-stars li.starred::after {
+.hotel-stars li.starred {
     content: "";
     display: block;
     background-image: url(../img/sprite.png);
@@ -1501,104 +1550,9 @@ img.plus {
     height: 17px;
     width: 18px;
     position: relative;
-    top: -91px;
+    top: 5px;
     left: -72px;
     margin-left: 5px;
 }
 
-.list-item:nth-child(1) .hotel-cost-min:nth-child(3) {
-    margin-left: -21px;
-}
-
-.list-item:nth-child(2) .hotel-cost-min:nth-child(3) {
-    margin-left: 5px;
-}
-
-.list-item:nth-child(3) .hotel-cost-min:nth-child(3) {
-    margin-left: -42px;
-}
-
-
-
-/*
-
-body {
-    padding: 3px;
-}
-
-body > *,
-body > * > *,
-body > * > * > * {
-    position: relative;
-}
-
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-    content: "";
-    position: absolute;
-
-    height: 24px;
-    padding: 2px 5px;
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Courier New", monotype;
-    white-space: nowrap;
-}
-
-body > *::before {
-    top: -3px;
-    left: -3px;
-}
-
-body > * > *::before {
-    top: -3px;
-    left: -3px;
-}
-
-body > * > * > *::before {
-    top: 0;
-    left: 0;
-}
-
-body > * {
-    background: rgba(0, 128, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
-}
-
-body > *::before {
-    color: white;
-    background: green;
-}
-
-body > * > * {
-    background: rgba(255, 45, 82, 0.2);
-    box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-body > * > *::before {
-    color: white;
-    background: rgb(255, 45, 82);
-}
-
-body > * > * > * {
-    background: rgba(234, 255, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-
-}
-
-body > * > * > *::before {
-    color: black;
-    background: rgb(234, 255, 45);
-}
-
-.header::before {
-    content: ".header";
-}
-
-.container::before {
-    content: ".container";
-}
-*/
+/* Конец блока выбранных отелей*/
