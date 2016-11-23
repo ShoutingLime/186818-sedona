@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
     <div class="container clearfix">
         <header class="header">
-            <a class="logo" href="index.html">
+            <a class="logo" href="#">
                 <img src="./img/logo.png" width="138" height="70" alt="Sedona">
             </a>
             <nav class="navigation clearfix">
@@ -103,14 +103,14 @@
                 <button class="search-form-button">Поиск гостиницы в Седоне</button>
                 <div class="search-popup">
                     <form action="handler.php" method="get" name="search-hotels-form">
-                       
-                       
+
+
                         <div class="check-in-date clearfix">
                             <label for="cal_1">Дата заезда:</label>
                             <input id="cal_1" type="text" size="40" placeholder="24 апреля 2016">
                         </div>
-                        
-                        
+
+
                         <div class="check-out-date clearfix">
                             <label for="cal_2">Дата выезда:</label>
                             <input id="cal_2" type="text" size="40" placeholder="4 июля 2016">
@@ -136,9 +136,15 @@
             </div>
             <div class="footer-social-networks">
                 <ul class="clearfix">
-                    <li><a class="socnet-link icon-twitter" href="#"></a></li>
-                    <li><a class="socnet-link icon-facebook" href="#"></a></li>
-                    <li><a class="socnet-link icon-youtube" href="#"></a></li>
+                    <li>
+                        <a class="socnet-link icon-twitter" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="socnet-link icon-facebook" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="socnet-link icon-youtube" href="#"></a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-copyright">
@@ -147,7 +153,7 @@
             </div>
         </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>

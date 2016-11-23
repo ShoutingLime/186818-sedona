@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Седона: выбор гостиницы</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -24,7 +24,7 @@
                         <a href="#">Фото и&nbsp;видео</a>
                     </li>
                     <li>
-                        <a class="active" href="hotels.html">Гостиницы</a>
+                        <a class="active" href="#">Гостиницы</a>
                     </li>
                     <li>
                         <a href="#map">Карта штата</a>
@@ -71,21 +71,25 @@
                     <div class="filter-range">
                         <div class="filter-range-title">Стоимость в сутки (р):</div>
                         <div class="price-controls">
-                            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-                                </div>
-                                <div class="range-controls">
-                                <div class="scale">
+                            <label class="min-price">от
+                                <input type="text" name="min-price" value="0">
+                            </label>
+                            <label class="max-price">до
+                                <input type="text" name="max-price" value="3000">
+                            </label>
+                        </div>
+                        <div class="range-controls">
+                            <div class="scale">
                                 <div class="bar"></div>
-                                </div>
-                                <div class="range-toggle range-toggle-min"></div>
-                                <div class="range-toggle range-toggle-max"></div>
-                                </div>
-                                <button class="btn-transparent" type="submit">Показать</button>
-                                </div>
+                            </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+                        </div>
+                        <button class="btn-transparent" type="submit">Показать</button>
+                    </div>
                 </form>
             </section>
-            
+
             <section class="selected">
                 <header class="header">
                     <div class="selected-summary">
@@ -115,7 +119,8 @@
                             <h3 class="hotel-name"><a href="#">Amara Resort &amp; Spa</a></h3>
                             <div class="hotel-parameters">
                                 <span class="hotel-type">Гостиница</span>
-                                <span class="hotel-price">От 3500 р.</span><br>
+                                <span class="hotel-price">От 3500 р.</span>
+                                <br>
                                 <a href="#" class="detailed">Подробнее</a>
                                 <a href="#" class="book">Забронировать</a>
                             </div>
@@ -141,7 +146,8 @@
                             <h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
                             <div class="hotel-parameters">
                                 <span class="hotel-type">Мотель</span>
-                                <span class="hotel-price">От 2000 р.</span><br>
+                                <span class="hotel-price">От 2000 р.</span>
+                                <br>
                                 <a href="#" class="detailed">Подробнее</a>
                                 <a href="#" class="book">Забронировать</a>
                             </div>
@@ -167,7 +173,8 @@
                             <h3 class="hotel-name"><a href="#">Villas at Poco Diablo</a></h3>
                             <div class="hotel-parameters">
                                 <span class="hotel-type">Апартаменты</span>
-                                <span class="hotel-price">От 4000 р.</span><br>
+                                <span class="hotel-price">От 4000 р.</span>
+                                <br>
                                 <a href="#" class="detailed">Подробнее</a>
                                 <a href="#" class="book">Забронировать</a>
                             </div>
@@ -181,7 +188,7 @@
                                 <li class="hotel-star"></li>
                             </ul>
                             <span class="hotel-rating">Рейтинг: 9,2</span>
-                            </div>
+                        </div>
                     </article>
                 </section>
             </section>
@@ -192,9 +199,15 @@
             </div>
             <div class="footer-social-networks">
                 <ul class="clearfix">
-                    <li><a class="socnet-link icon-twitter" href="#"></a></li>
-                    <li><a class="socnet-link icon-facebook" href="#"></a></li>
-                    <li><a class="socnet-link icon-youtube" href="#"></a></li>
+                    <li>
+                        <a class="socnet-link icon-twitter" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="socnet-link icon-facebook" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="socnet-link icon-youtube" href="#"></a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-copyright">
